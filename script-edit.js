@@ -22,3 +22,20 @@ changingForm.addEventListener('submit', (event) => {
      saveNames(names)
 
 })
+
+window.addEventListener('storage', (event) => {
+     if(event.key === 'names') {
+          names = JSON.parse(event.newValue)
+     }
+     let searchName = names.find((oneObject) => {
+          return oneObject.id === nameID
+     }) 
+     
+     if(searchName === undefined){
+          location.assign('/index.html')
+     }
+     
+     document.querySelector('#editedName').value = searchName.firstName
+
+})
+
