@@ -1,0 +1,87 @@
+body {
+     background: rgb(14, 69, 78);
+}
+
+h1 {
+     color: #fff;
+     text-align: center;
+}
+
+form {
+     text-align: center;
+}
+
+input[type='text'] {
+     outline: none;
+     text-align: center;
+     border-radius: 10px;
+     font-size: 25px;
+}
+
+input[type='submit'] {
+     font-size: 20px;
+     margin-top: 10px;
+     border-radius: 10px;
+     background: rgb(0, 131, 151);
+     color: #fff;
+     cursor: pointer;
+     width: 100px;
+}
+
+input[type='submit']:hover {
+     background: rgb(2, 160, 184);
+     box-shadow: 2px 2px 5px black;
+}
+
+.to-list {
+     display: block;
+     margin: 10px auto;
+     font-size: 20px;
+     border-radius: 10px;
+     background: rgb(0, 131, 151);
+     color: #fff;
+     cursor: pointer;
+     width: 100px;
+}
+
+.to-list:hover {
+     background: rgb(2, 160, 184);
+     box-shadow: 2px 2px 5px black;
+}
+
+.list-names {
+     display: block;
+     width: 300px;
+     margin: 0 auto;
+     color: #fff;
+}
+
+.list-names button {
+     background: rgb(106, 2, 2);
+     font-size: 18px;
+     border-radius: 10px;
+     margin-top: 5px;
+     color: #fff;
+     padding: 5px 10px;
+     cursor: pointer;
+}
+
+.list-names button:hover {
+     background: rgb(159, 3, 3);
+     box-shadow: 2px 2px 5px black;
+}
+
+.list-names a {
+     margin-left: 20px;
+     font-size: 25px;
+     text-decoration: none;
+}
+
+.adult {
+     text-decoration: underline;
+     color: green;
+}
+
+.no-adult {
+     color: red;
+}
