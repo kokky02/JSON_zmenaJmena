@@ -55,9 +55,8 @@ const generateHTMLStructure = (oneName) => {
 
 // podle ID najdeme index daného jména a pomkocí splice ho odstraníme
 const removeNames = (ourNames, id) => {
-     const index = ourNames.findIndex((nameWantToCheck) => {
-          return nameWantToCheck.id === id
-     })
+     const index = ourNames.findIndex((nameWantToCheck) => nameWantToCheck.id === id
+     )
 
      if(index > -1 ){
           ourNames.splice(index, 1)

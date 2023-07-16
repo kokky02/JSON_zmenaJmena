@@ -1,7 +1,3 @@
-console.log('%c tento text je zelený', 'color: #2a8938; font-weight: bold')
-console.log('%c tento text je žlutý', 'color: #ffc04f; font-weight: bold')
-console.log('%c ______________________________', 'color: purple')
-
 //načtení dat z localStorage do proměnné names; pokud je localStorage prázdný, tak do names se uloží prázdné pole
 const names = getSaveNames()
 
@@ -21,7 +17,7 @@ myForm.addEventListener('submit', (event) => {
 
      event.target.elements.firstName.value = ''
      myCheckbox.checked = false
-
+ 
      saveNames(names)
 })
 
@@ -41,3 +37,6 @@ buttonToList.addEventListener('click', (event) => {
 
 })
 
+window.addEventListener('storage', (event) => {
+     location.reload()
+})
